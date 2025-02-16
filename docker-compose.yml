@@ -2,7 +2,7 @@ version: "3.8"
 services:
   web:
     build: ./app
-    image: 725168915491.dkr.ecr.us-west-2.amazonaws.com:workshop2_web
+    image: 725168915491.dkr.ecr.us-west-2.amazonaws.com:workshop2:workshop2_web
     command: gunicorn nc_tutorials.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./app/:/usr/src/app/
